@@ -1,20 +1,12 @@
 ---
 declared-services:
-  my-watson-assistant-service:
+  Watson-Assistant-car-Dashboard-pk:
     label: conversation
     plan: free
-  speech-to-text-service:
-    label: speech_to_text
-    plan: standard
-  text-to-speech-service:
-    label: text_to_speech
-    plan: standard
 applications:
-- name: car-dashboard
+- name: watson-assistant-car-dashboard-pk
   command: npm start
   path: .
   memory: 512M
   services:
-  - my-watson-assistant-service
-  - speech-to-text-service
-  - text-to-speech-service
+  - Watson-Assistant-car-Dashboard-pk
